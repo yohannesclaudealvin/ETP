@@ -517,7 +517,7 @@ def build_model(data, Methode):
 
         if st.form_submit_button('Appuyer pour telecharger le fichier'):
             list1 =Result[col1].tolist()
-            #col1 = "ETP"
+            col1 = "ETP"
             donnee = pd.DataFrame({col1: list1})
             donnee.to_excel('fichier_result.xlsx', sheet_name='sheet1', index=False)
             st.markdown('Le fichier a été telecharger avec succès')

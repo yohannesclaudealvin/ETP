@@ -522,6 +522,10 @@ def build_model(data, Methode):
             donnee = pd.DataFrame({col1:list1})
             donnee.to_excel('fichier_result.xlsx',sheet_name = 'sheet1', index=False)
             st.markdown('Le fichier a été telecharger avec succès')
+            # Ajouter l'icône de téléchargement
+    download_link = f'<a href="/path/to/fichier_result.xlsx" download="fichier_result.xlsx">\
+        <img src="https://icon-library.net/images/download-icon/download-icon-29.jpg" alt="Télécharger" width="20"></a>'
+    st.markdown(download_link, unsafe_allow_html=True)
 
         st.markdown("## **📈 Affichage du graphe**")
 

@@ -521,7 +521,7 @@ def build_model(data, Methode):
             donnee = pd.DataFrame({col1:list1})
             donnee.to_excel('fichier_result.xlsx',sheet_name = 'sheet1', index=False)
             st.markdown('Le fichier a été telecharger avec succès')
-            show(Result)
+            st.write(Result)
         st.markdown("## **📈 Affichage du graphe**")
 
         if st.form_submit_button('Appuyer pour afficher la représentations graphique'):

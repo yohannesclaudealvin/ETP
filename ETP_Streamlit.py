@@ -512,7 +512,7 @@ def build_model(data, Methode):
         if st.form_submit_button('Appuyer pour afficher le resultats'):
             d = {'Date' : data['Mois'], 'ETP' : Result}
             #st.dataframe(d)
-            st.plotly_chart(d)
+          
 
         st.markdown("## **🖨️ Telechargement vers un fichier excel**")
 

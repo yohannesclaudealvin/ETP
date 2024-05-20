@@ -516,12 +516,12 @@ def build_model(data, Methode):
         st.markdown("## **🖨️ Telechargement vers un fichier excel**")
 
         if st.form_submit_button('Appuyer pour telecharger le fichier'):
-            list1 =Result[col1].tolist()
+            list1 =Result
             col1 = "ETP"
             donnee = pd.DataFrame({col1: list1})
             donnee.to_excel('fichier_result.xlsx', sheet_name='sheet1', index=False)
             st.markdown('Le fichier a été telecharger avec succès')
-            st.dataFrame(Result)
+           
         st.markdown("## **📈 Affichage du graphe**")
 
         if st.form_submit_button('Appuyer pour afficher la représentations graphique'):
